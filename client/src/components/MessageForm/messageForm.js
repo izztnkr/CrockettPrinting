@@ -6,6 +6,7 @@ import { ADD_MESSAGE } from '../../utils/mutations';
 import { QUERY_MESSAGES } from '../../utils/queries';
 
 import Auth from '../../utils/auth';
+import "./style.css";
 
 const MessageForm = () => {
   const [messageText, setMessageText] = useState('');

@@ -1,21 +1,21 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Thought } = require('../models');
+const { User, Message } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
   Query: {
     users: async () => {
-      return User.find().populate('thoughts');
+      return User.find().populate('messages');
     },
     user: async (parent, { username }) => {
-      return User.findOne({ username }).populate('thoughts');
+      return User.findOne({ username }).populate('messages');
     },
-    thoughts: async (parent, { username }) => {
+    messages: async (parent, { username }) => {
       const params = username ? { username } : {};
-      return Thought.find(params).sort({ createdAt: -1 });
+      return Message.find(params).sort({ createdAt: -1 });
     },
-    thought: async (parent, { thoughtId }) => {
-      return Thought.findOne({ _id: thoughtId });
+    message: async (parent, { messageId }) => {
+      return Message.findOne({ _id: messageId });
     },
   },
 
@@ -42,19 +42,19 @@ const resolvers = {
 
       return { token, user };
     },
-    addThought: async (parent, { thoughtText, thoughtAuthor }) => {
-      const thought = await Thought.create({ thoughtText, thoughtAuthor });
+    addMessage: async (parent, { messageText, messageAuthor }) => {
+      const message = await Message.create({ messageText, messageAuthor });
 
       await User.findOneAndUpdate(
-        { username: thoughtAuthor },
-        { $addToSet: { thoughts: thought._id } }
+        { username: messageAuthor },
+        { $addToSet: { messages: message._id } }
       );
 
-      return thought;
+      return message;
     },
-    addComment: async (parent, { thoughtId, commentText, commentAuthor }) => {
-      return Thought.findOneAndUpdate(
-        { _id: thoughtId },
+    addComment: async (parent, { messageId, commentText, commentAuthor }) => {
+      return Message.findOneAndUpdate(
+        { _id:messageId },
         {
           $addToSet: { comments: { commentText, commentAuthor } },
         },
@@ -64,12 +64,12 @@ const resolvers = {
         }
       );
     },
-    removeThought: async (parent, { thoughtId }) => {
-      return Thought.findOneAndDelete({ _id: thoughtId });
+    removeMessage: async (parent, { messageId }) => {
+      return Message.findOneAndDelete({ _id: messageId });
     },
-    removeComment: async (parent, { thoughtId, commentId }) => {
-      return Thought.findOneAndUpdate(
-        { _id: thoughtId },
+    removeComment: async (parent, { messageId, commentId }) => {
+      return Message.findOneAndUpdate(
+        { _id: messageId },
         { $pull: { comments: { _id: commentId } } },
         { new: true }
       );

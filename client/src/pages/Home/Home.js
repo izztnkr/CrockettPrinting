@@ -25,7 +25,7 @@ const Home = () => {
           ) : (
             <MessageList
             messages={messages}
-              title="Some Feed for Thought(s)..."
+              title="Some Feed for Message(s)..."
             />
           )}
         </div>

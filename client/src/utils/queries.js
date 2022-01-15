@@ -6,9 +6,9 @@ export const QUERY_USER = gql`
       _id
       username
       email
-      thoughts {
+      messages {
         _id
-        thoughtText
+        messageText
         createdAt
       }
     }
@@ -26,18 +26,29 @@ export const QUERY_MESSAGE = gql`
   }
 `;
 
-export const QUERY_SINGLE_THOUGHT = gql`
-  query getSingleThought($thoughtId: ID!) {
-    thought(thoughtId: $thoughtId) {
+export const QUERY_SINGLE_MESSAGE = gql`
+  query getSingleMessage($messageId: ID!) {
+    message(messageId: $messageId) {
       _id
-      thoughtText
-      thoughtAuthor
+      messageText
+      messageAuthor
       createdAt
       comments {
         _id
         commentText
         createdAt
       }
+    }
+  }
+`;
+
+export const QUERY_COMMENT = gql`
+  query getMessage {
+    message {
+      _id
+      messageText
+      messageAuthor
+      createdAt
     }
   }
 `;

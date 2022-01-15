@@ -1,0 +1,42 @@
+[
+  {
+    "messageText": "Everyone knows that debugging is twice as hard as writing a program in the first place. So if you're as clever as you can be when you write it, how will you ever debug it?",
+    "messageAuthor": "Brian Kernighan"
+  },
+  {
+    "messageText": "Some of the best programming is done on paper, really. Putting it into the computer is just a minor detail.",
+    "messageAuthor": "Max Kanat-Alexander"
+  },
+  {
+    "messageText": "When you don't create things, you become defined by your tastes rather than ability. Your tastes only narrow & exclude people. So create.",
+    "messageAuthor": "Why The Lucky Stiff"
+  },
+  {
+    "messageText": "I'm not a great programmer; I'm just a good programmer with great habits.",
+    "messageAuthor": "Kent Beck"
+  },
+  {
+    "messageText": "Walking on water and developing software from a specification are easy if both are frozen.",
+    "messageAuthor": "Edward V. Berard"
+  },
+  {
+    "messageText": "The most disastrous thing that you can ever learn is your first programming language.",
+    "messageAuthor": "Alan Kay"
+  },
+  {
+    "messageText": "The most important property of a program is whether it accomplishes the intention of its user.",
+    "messageAuthor": "C.A.R. Hoare"
+  },
+  {
+    "messageText": "Delivering good software today is often better than perfect software tomorrow, so finish things and ship.",
+    "messageAuthor": "David Thomas"
+  },
+  {
+    "messageText": "If you optimize everything, you will always be unhappy.",
+    "messageAuthor": "Donald Knuth"
+  },
+  {
+    "messageText": "It's not a bug; it's an undocumented feature.",
+    "messageAuthor": "Lernantino"
+  }
+]

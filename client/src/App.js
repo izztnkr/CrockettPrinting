@@ -66,7 +66,7 @@ function App() {
             <Route exact path="/products">
               <Products />
             </Route>
-            <Route exact path="/products/SpongeBob">
+            <Route exact path="/products/:name">
               <ProductOptions />
             </Route>
           </div>

@@ -15,7 +15,7 @@ function ProductCard(props) {
             <strong> {props.name}</strong>
           </li>
           <li className="link">
-            <Link to={`/products/${props.namee}`}>
+            <Link to={`/products/${props.name}`}>
               Explore all {props.name} products
             </Link>
           </li>

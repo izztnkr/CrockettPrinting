@@ -1,13 +1,13 @@
-import React from 'react';
-import { useQuery } from '@apollo/client';
+import React from "react";
+import { useQuery } from "@apollo/client";
 
-import MessageList from '../../components/MessageList/MessageList';
-import MessageForm from '../../components/MessageForm/messageForm';
+import MessageList from "../../components/MessageList/MessageList";
+import MessageForm from "../../components/MessageForm/messageForm";
 
-import { QUERY_MESSAGE } from '../../utils/queries';
+import { QUERY_MESSAGES } from "../../utils/queries";
 
 const Home = () => {
-  const { loading, data } = useQuery(QUERY_MESSAGE);
+  const { loading, data } = useQuery(QUERY_MESSAGES);
   const messages = data?.messages || [];
 
   return (
@@ -15,7 +15,7 @@ const Home = () => {
       <div className="flex-row justify-center">
         <div
           className="col-12 col-md-10 mb-3 p-3"
-          style={{ border: '1px dotted #1a1a1a' }}
+          style={{ border: "1px dotted #1a1a1a" }}
         >
           <MessageForm />
         </div>
@@ -24,7 +24,7 @@ const Home = () => {
             <div>Loading...</div>
           ) : (
             <MessageList
-            messages={messages}
+              messages={messages}
               title="Some Feed for Message(s)..."
             />
           )}

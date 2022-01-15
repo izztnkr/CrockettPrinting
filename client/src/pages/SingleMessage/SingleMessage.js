@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
 // Import the `useParams()` hook
-import { useParams } from 'react-router-dom';
-import { useQuery } from '@apollo/client';
+import { useParams } from "react-router-dom";
+import { useQuery } from "@apollo/client";
 
-import CommentList from '../../components/CommentList/commentList';
-import CommentForm from '../../components/CommentForm/commentForm';
+import CommentList from "../../components/CommentList/commentList";
+import CommentForm from "../../components/CommentForm/commentForm";
 
-import { QUERY_SINGLE_MESSAGE } from '../../utils/queries';
+import { QUERY_SINGLE_MESSAGE } from "../../utils/queries";
 
 const SingleMessage = () => {
   // Use `useParams()` to retrieve value of the route parameter `:profileId`
@@ -15,7 +15,7 @@ const SingleMessage = () => {
 
   const { loading, data } = useQuery(QUERY_SINGLE_MESSAGE, {
     // pass URL parameter
-    variables: { messageId: messageId },
+    variables: { messageId: "messageId" },
   });
 
   const message = data?.message || {};
@@ -27,7 +27,7 @@ const SingleMessage = () => {
     <div className="my-3">
       <h3 className="card-header bg-dark text-light p-2 m-0">
         {message.messageAuthor} <br />
-        <span style={{ fontSize: '1rem' }}>
+        <span style={{ fontSize: "1rem" }}>
           had this message on {message.createdAt}
         </span>
       </h3>
@@ -35,10 +35,10 @@ const SingleMessage = () => {
         <blockquote
           className="p-4"
           style={{
-            fontSize: '1.5rem',
-            fontStyle: 'italic',
-            border: '2px dotted #1a1a1a',
-            lineHeight: '1.5',
+            fontSize: "1.5rem",
+            fontStyle: "italic",
+            border: "2px dotted #1a1a1a",
+            lineHeight: "1.5",
           }}
         >
           {message.messageText}
@@ -48,7 +48,7 @@ const SingleMessage = () => {
       <div className="my-5">
         <CommentList comments={message.comments} />
       </div>
-      <div className="m-3 p-4" style={{ border: '1px dotted #1a1a1a' }}>
+      <div className="m-3 p-4" style={{ border: "1px dotted #1a1a1a" }}>
         <CommentForm messageId={message._id} />
       </div>
     </div>

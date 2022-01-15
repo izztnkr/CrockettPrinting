@@ -1,4 +1,4 @@
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 
 export const QUERY_USER = gql`
   query user($username: String!) {
@@ -15,9 +15,9 @@ export const QUERY_USER = gql`
   }
 `;
 
-export const QUERY_MESSAGE = gql`
-  query getMessage {
-    message {
+export const QUERY_MESSAGES = gql`
+  query getMessages {
+    messages {
       _id
       messageText
       messageAuthor
@@ -26,6 +26,16 @@ export const QUERY_MESSAGE = gql`
   }
 `;
 
+export const QUERY_USER_MESSAGES = gql`
+  query getUserMessages($username: String) {
+    messages(username: $username) {
+      _id
+      messageText
+      messageAuthor
+      createdAt
+    }
+  }
+`;
 export const QUERY_SINGLE_MESSAGE = gql`
   query getSingleMessage($messageId: ID!) {
     message(messageId: $messageId) {
@@ -43,11 +53,11 @@ export const QUERY_SINGLE_MESSAGE = gql`
 `;
 
 export const QUERY_COMMENT = gql`
-  query getMessage {
-    message {
+  query getComment {
+    comment {
       _id
-      messageText
-      messageAuthor
+      commentText
+      commentAuthor
       createdAt
     }
   }

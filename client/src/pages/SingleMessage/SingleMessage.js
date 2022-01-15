@@ -15,7 +15,7 @@ const SingleMessage = () => {
 
   const { loading, data } = useQuery(QUERY_SINGLE_MESSAGE, {
     // pass URL parameter
-    variables: { messageId: "messageId" },
+    variables: { messageId: messageId },
   });
 
   const message = data?.message || {};

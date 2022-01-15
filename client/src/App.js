@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Signup from "./pages/SignUp/Signup";
 import Login from "./pages/LogIn/Login";
-import SingleThought from "./pages/SingleThought/SingleThought";
+import SingleMessage from "./pages/SingleMessage/SingleMessage";
 import Header from "./components/Header/header";
 import Footer from "./components/Footer/footer";
 
@@ -55,8 +55,8 @@ function App() {
             <Route exact path="/signup">
               <Signup />
             </Route>
-            <Route exact path="/thoughts/:thoughtId">
-              <SingleThought />
+            <Route exact path="/messages/:messageId">
+              <SingleMessage />
             </Route>
           </div>
           <Footer />

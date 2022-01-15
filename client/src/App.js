@@ -15,6 +15,7 @@ import SingleMessage from "./pages/SingleMessage/SingleMessage";
 import Header from "./components/Header/header";
 import Footer from "./components/Footer/footer";
 import Products from "./pages/Products";
+import ProductOptions from "./components/ProductOptionsCard"
 import About from "./pages/About/index.js"
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -64,6 +65,9 @@ function App() {
             </Route>
             <Route exact path="/products">
               <Products />
+            </Route>
+            <Route exact path="/products/SpongeBob">
+              <ProductOptions />
             </Route>
           </div>
           <Footer />

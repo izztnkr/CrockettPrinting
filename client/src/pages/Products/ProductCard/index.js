@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 // import { useQuery } from '@apollo/client';
 import "./style.css";
 
@@ -13,14 +14,10 @@ function ProductCard(props) {
           <li>
             <strong> {props.name}</strong>
           </li>
-          <li className='link'>
-              <p>Unit:</p>
-          </li>
-          <li>s
-          <p>Price/unit:</p>
-          </li>
-          <li>
-          <p>Description:</p>
+          <li className="link">
+            <Link to={`/products/${props.namee}`}>
+              Explore all {props.name} products
+            </Link>
           </li>
         </ul>
       </div>

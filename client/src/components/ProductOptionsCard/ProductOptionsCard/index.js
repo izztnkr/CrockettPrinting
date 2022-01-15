@@ -2,7 +2,7 @@ import React from 'react';
 // import { useQuery } from '@apollo/client';
 import "./style.css";
 
-function CategoryCard(props) {
+function ProductOptionsCard(props) {
   return (
     <div className="card">
       <div className="img-container">
@@ -27,4 +27,4 @@ function CategoryCard(props) {
     </div>
   );
 }
-export default CategoryCard;
+export default ProductOptionsCard;

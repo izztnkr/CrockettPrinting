@@ -1,5 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
+import "../MessageList/style.css";
 
 const MessageList = ({ messages, title }) => {
   if (!messages.length) {
@@ -14,7 +15,7 @@ const MessageList = ({ messages, title }) => {
           <div key={message._id} className="card mb-3">
             <h4 className="card-header bg-primary text-light p-2 m-0">
               {message.messageAuthor} <br />
-              <span style={{ fontSize: '1rem' }}>
+              <span style={{ fontSize: "1rem" }}>
                 message submitted on {message.createdAt}
               </span>
             </h4>

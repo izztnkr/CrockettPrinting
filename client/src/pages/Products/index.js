@@ -1,11 +1,11 @@
 // Import 'useState' Hook from React
 import React, { useState } from 'react';
-import ProductCard from './ProductCard/ProductCard';
-import Wrapper from './Wrapper/Wrapper';
+import ProductCard from './ProductCard';
+import Wrapper from './Wrapper';
 import products from './products.json';
 // import './App.css';
 
-function Product() {
+function Products() {
   // Using useState, declare a new state variable 'productsList' and set it to the 'products' array from 'DB'
   const [productsList, setProductsList] = useState(products);
 
@@ -18,7 +18,7 @@ function Product() {
 
   return (
     <Wrapper>
-      <h1 className="title">Products List</h1>
+      <h1 className="title">Explore All Print Products</h1>
       {/* Map through 'prodcutsList' and render a 'ProductCard' for each product */}
       {/* Pass in the 'removeProduct()' method and each property of a product */}
       {productsList.map(product => (
@@ -37,4 +37,4 @@ function Product() {
   );
 }
 
-export default Product;
+export default Products;

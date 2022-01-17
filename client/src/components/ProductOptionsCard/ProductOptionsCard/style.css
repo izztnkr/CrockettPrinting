@@ -1,6 +1,6 @@
 .card {
   border-radius: 2px;
-  height: 350px;
+  height: 550px;
   margin: 1rem;
   position: relative;
   width: 525px;
@@ -9,13 +9,13 @@
 }
 
 .card > .img-container {
-  height: 70%;
+  height: 60%;
   overflow: hidden;
   text-align: center;
   background:#ffe6e6;
 }
 .card > .img-container > img {
-  width: 100%
+  width: 35%
 }
 
 .card > .content {

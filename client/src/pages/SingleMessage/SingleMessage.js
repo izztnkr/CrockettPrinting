@@ -4,8 +4,8 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 
-import CommentList from "../../components/CommentList/commentList";
-import CommentForm from "../../components/CommentForm/commentForm";
+import ResponseList from "../../components/ResponseList";
+import ResponseForm from "../../components/ResponseForm";
 
 import { QUERY_SINGLE_MESSAGE } from "../../utils/queries";
 
@@ -46,10 +46,10 @@ const SingleMessage = () => {
       </div>
 
       <div className="my-5">
-        <CommentList comments={message.comments} />
+        <ResponseList responses={message.responses} />
       </div>
       <div className="m-3 p-4" style={{ border: "1px dotted #1a1a1a" }}>
-        <CommentForm messageId={message._id} />
+        <ResponseForm messageId={message._id} />
       </div>
     </div>
   );

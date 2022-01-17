@@ -18,6 +18,21 @@ const Header = () => {
           <p className="m-0">Printing and Design solutions for all of your needs.</p>
         </div>
         <div>
+          <Link className="text-light" to="/">
+          <h2 className="m-0">Home</h2>
+            </Link>
+        </div>
+        <div>
+          <Link className="text-light" to="/products">
+          <h2 className="m-0">Products</h2>
+            </Link>
+        </div>
+        <div>
+          <Link className="text-light" to="/messages">
+          <h2 className="m-0">Messages</h2>
+            </Link>
+        </div>
+        <div>
           {Auth.loggedIn() ? (
             <>
               <span>Hey there, {Auth.getProfile().data.username}!</span>

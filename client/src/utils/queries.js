@@ -1,4 +1,4 @@
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 
 export const QUERY_USER = gql`
   query user($username: String!) {
@@ -6,18 +6,18 @@ export const QUERY_USER = gql`
       _id
       username
       email
-      thoughts {
+      messages {
         _id
-        thoughtText
+        messageText
         createdAt
       }
     }
   }
 `;
 
-export const QUERY_MESSAGE = gql`
-  query getMessage {
-    message {
+export const QUERY_MESSAGES = gql`
+  query getMessages {
+    messages {
       _id
       messageText
       messageAuthor
@@ -26,12 +26,22 @@ export const QUERY_MESSAGE = gql`
   }
 `;
 
-export const QUERY_SINGLE_THOUGHT = gql`
-  query getSingleThought($thoughtId: ID!) {
-    thought(thoughtId: $thoughtId) {
+export const QUERY_USER_MESSAGES = gql`
+  query getUserMessages($username: String) {
+    messages(username: $username) {
       _id
-      thoughtText
-      thoughtAuthor
+      messageText
+      messageAuthor
+      createdAt
+    }
+  }
+`;
+export const QUERY_SINGLE_MESSAGE = gql`
+  query getSingleMessage($messageId: ID!) {
+    message(messageId: $messageId) {
+      _id
+      messageText
+      messageAuthor
       createdAt
       comments {
         _id
@@ -41,3 +51,45 @@ export const QUERY_SINGLE_THOUGHT = gql`
     }
   }
 `;
+
+export const QUERY_COMMENT = gql`
+  query getComment {
+    comment {
+      _id
+      commentText
+      commentAuthor
+      createdAt
+    }
+  }
+`;
+
+export const QUERY_CATEGORIES = gql`
+  query getCategories {
+    category {
+      _id
+      link
+      name
+      options {
+        _id
+        name
+        size
+        price
+      }
+    }
+  }`
+
+export const QUERY_SINGLE_CATEGORY = gql`
+query getCategories($categoryId: ID!) {
+  category(category: $category) {
+    _id
+    link
+    name
+    options {
+      _id
+      name
+      size
+      price
+    }
+  }
+}`
+

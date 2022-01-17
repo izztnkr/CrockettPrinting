@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 
 import { ADD_MESSAGE } from '../../utils/mutations';
-import { QUERY_MESSAGE } from '../../utils/queries';
+import { QUERY_MESSAGES } from '../../utils/queries';
 
 import Auth from '../../utils/auth';
+import "./style.css";
 
 const MessageForm = () => {
   const [messageText, setMessageText] = useState('');
@@ -15,10 +16,10 @@ const MessageForm = () => {
   const [addMessage, { error }] = useMutation(ADD_MESSAGE, {
     update(cache, { data: { addMessage } }) {
       try {
-        const { messages } = cache.readQuery({ query: QUERY_MESSAGE });
+        const { messages } = cache.readQuery({ query: QUERY_MESSAGES });
 
         cache.writeQuery({
-          query: QUERY_MESSAGE,
+          query: QUERY_MESSAGES,
           data: { messages: [addMessage, ...messages] },
         });
       } catch (e) {

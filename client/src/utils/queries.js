@@ -62,3 +62,34 @@ export const QUERY_RESPONSE = gql`
     }
   }
 `;
+
+export const QUERY_CATEGORIES = gql`
+  query getCategories {
+    category {
+      _id
+      link
+      name
+      options {
+        _id
+        name
+        size
+        price
+      }
+    }
+  }`
+
+export const QUERY_SINGLE_CATEGORY = gql`
+query getCategories($categoryId: ID!) {
+  category(category: $category) {
+    _id
+    link
+    name
+    options {
+      _id
+      name
+      size
+      price
+    }
+  }
+}`
+

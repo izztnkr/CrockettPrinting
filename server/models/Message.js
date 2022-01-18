@@ -19,15 +19,15 @@ const messageSchema = new Schema({
     default: Date.now,
     get: (timestamp) => dateFormat(timestamp),
   },
-  comments: [
+  responses: [
     {
-      commentText: {
+      responseText: {
         type: String,
         required: true,
         minlength: 1,
         maxlength: 280,
       },
-      commentAuthor: {
+      responseAuthor: {
         type: String,
         required: true,
       },

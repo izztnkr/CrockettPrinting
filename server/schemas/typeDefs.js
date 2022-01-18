@@ -14,13 +14,13 @@ const typeDefs = gql`
     messageText: String
     messageAuthor: String
     createdAt: String
-    comments: [Comment]!
+    responses: [Response]!
   }
 
-  type Comment {
+  type Response {
     _id: ID
-    commentText: String
-    commentAuthor: String
+    responseText: String
+    responseAuthor: String
     createdAt: String
   }
 
@@ -41,13 +41,13 @@ const typeDefs = gql`
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
     addMessage(messageText: String!, messageAuthor: String!): Message
-    addComment(
+    addResponse(
       messageId: ID!
-      commentText: String!
-      commentAuthor: String!
+      responseText: String!
+      responseAuthor: String!
     ): Message
     removeMessage(messageId: ID!): Message
-    removeComment(messageId: ID!, commentId: ID!): Message
+    removeResponse(messageId: ID!, responseId: ID!): Message
   }
 `;
 

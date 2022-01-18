@@ -43,21 +43,21 @@ export const QUERY_SINGLE_MESSAGE = gql`
       messageText
       messageAuthor
       createdAt
-      comments {
+      responses {
         _id
-        commentText
+        responseText
         createdAt
       }
     }
   }
 `;
 
-export const QUERY_COMMENT = gql`
-  query getComment {
-    comment {
+export const QUERY_RESPONSE = gql`
+  query getResponse {
+    response {
       _id
-      commentText
-      commentAuthor
+      responseText
+      responseAuthor
       createdAt
     }
   }

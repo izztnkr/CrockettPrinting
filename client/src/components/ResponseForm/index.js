@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 
 import { ADD_RESPONSE } from '../../utils/mutations';
+import { REMOVE_RESPONSE } from '../../utils/mutations';
 
 import Auth from '../../utils/auth';
 

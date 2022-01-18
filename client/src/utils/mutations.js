@@ -1,4 +1,4 @@
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 
 export const LOGIN_USER = gql`
   mutation login($email: String!, $password: String!) {
@@ -50,6 +50,38 @@ export const ADD_RESPONSE = gql`
       responseText: $responseText
       responseAuthor: $responseAuthor
     ) {
+      _id
+      messageText
+      messageAuthor
+      createdAt
+      responses {
+        _id
+        responseText
+        createdAt
+      }
+    }
+  }
+`;
+
+export const REMOVE_MESSAGE = gql`
+  mutation removeMessage($messageId: ID!) {
+    removeMessage(messageId: $messageId) {
+      _id
+      messageText
+      messageAuthor
+      createdAt
+      responses {
+        _id
+        responseText
+        createdAt
+      }
+    }
+  }
+`;
+
+export const REMOVE_RESPONSE = gql`
+  mutation addResponse($messageId: ID!, $commentId: ID!) {
+    removeResponse(messageId: $messageId, commentId: $commentId) {
       _id
       messageText
       messageAuthor

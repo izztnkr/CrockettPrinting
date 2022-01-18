@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Message } = require('../models');
+const { User, Message, Category } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -20,6 +20,15 @@ const resolvers = {
     messages: async (parent, { username }) => {
       return Message.find().sort({ createdAt: -1 });
     },
+    // messing around with these bottom two, dont think parent is necessary but if something broke, double check
+    categories: async () => {
+      return Category.find().populate("options");
+    },
+    categories: async(parent, { categoryId }) => {
+      return Category.findOne({ categoryId }).populate("options");
+    }
+    
+  
   },
 
   Mutation: {

@@ -920,7 +920,7 @@ a:hover {
 
 /* BACKGROUND UTILS */
 .bg-primary {
-  background-color: #2d3e50 !important;
+  background-color: #613659 !important;
 }
 
 .bg-info {
@@ -932,7 +932,9 @@ a:hover {
 }
 
 .bg-light {
-  background-color: #d9e9e8 !important;
+  background-color: #211522
+
+  e9e8 !important;
 }
 
 .bg-dark {
@@ -940,7 +942,7 @@ a:hover {
 }
 
 .bg-white {
-  background-color: #ffffff !important;
+  background-color: #211522  !important;
 }
 
 .bg-black {

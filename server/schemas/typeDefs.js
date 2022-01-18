@@ -35,6 +35,8 @@ const typeDefs = gql`
     messages: [Message]
     userMessages(username: String): [Message]
     message(messageId: ID!): Message
+    categories: [Category]
+    category(categoryId: ID!): Category
   }
 
   type Mutation {
@@ -48,6 +50,20 @@ const typeDefs = gql`
     ): Message
     removeMessage(messageId: ID!): Message
     removeComment(messageId: ID!, commentId: ID!): Message
+  },
+
+  type Category {
+    _id: ID!
+    link: String!
+    name: String!
+    options: [Options]! 
+  },
+
+  type Options {
+    _id: ID
+    name: String!
+    size: String!
+    price: String!
   }
 `;
 

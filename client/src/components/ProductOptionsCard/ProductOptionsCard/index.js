@@ -14,10 +14,10 @@ function ProductOptionsCard(props) {
             <strong> {props.name}</strong>
           </li>
           <li className='link'>
-              <p>Unit:</p>
+              <p>Unit: </p>
           </li>
           <li>s
-          <p>Price/unit:</p>
+          <p>Price/unit: {}</p>
           </li>
           <li>
           <p>Description:</p>

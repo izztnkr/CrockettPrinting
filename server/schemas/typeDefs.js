@@ -54,8 +54,8 @@ const typeDefs = gql`
 
   type Category {
     _id: ID!
-    link: String!
     name: String!
+    image: String!
     options: [Options]! 
   },
 

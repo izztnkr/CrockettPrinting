@@ -67,7 +67,7 @@ export const QUERY_CATEGORIES = gql`
   query getCategories {
     category {
       _id
-      link
+      image
       name
       options {
         _id
@@ -82,7 +82,7 @@ export const QUERY_SINGLE_CATEGORY = gql`
 query getCategories($categoryId: ID!) {
   category(category: $category) {
     _id
-    link
+    image
     name
     options {
       _id

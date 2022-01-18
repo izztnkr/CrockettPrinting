@@ -1,7 +1,8 @@
 const db = require('../config/connection');
-const { User, Message } = require('../models');
+const { User, Message, Category } = require('../models');
 const userSeeds = require('./userSeeds.json');
 const messageSeeds = require('./messageSeeds.json');
+const categorySeeds = require('./categorySeed.json');
 
 db.once('open', async () => {
   try {
@@ -9,6 +10,7 @@ db.once('open', async () => {
     await User.deleteMany({});
 
     await User.create(userSeeds);
+    await Category.create(categorySeeds);
 
     for (let i = 0; i < messageSeeds.length; i++) {
       const { _id, messageAuthor } = await Message.create(messageSeeds[i]);
@@ -21,6 +23,10 @@ db.once('open', async () => {
         }
       );
     }
+
+    //WE NEED TO CODE IT TO SEED THE CATEGORYSEEDS.JS
+
+
   } catch (err) {
     console.error(err);
     process.exit(1);

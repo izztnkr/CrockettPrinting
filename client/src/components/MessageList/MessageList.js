@@ -26,7 +26,7 @@ const MessageList = ({ messages, title }) => {
               className="btn btn-primary btn-block btn-squared"
               to={`/messages/${message._id}`}
             >
-              Looking forward to hearing from you!
+              Click here to reply.
             </Link>
           </div>
         ))}

@@ -64,11 +64,11 @@ const resolvers = {
 
       return message;
     },
-    addComment: async (parent, { messageId, commentText, commentAuthor }) => {
+    addResponse: async (parent, { messageId, responseText, responseAuthor }) => {
       return Message.findOneAndUpdate(
         { _id:messageId },
         {
-          $addToSet: { comments: { commentText, commentAuthor } },
+          $addToSet: { responses: { responseText, responseAuthor } },
         },
         {
           new: true,
@@ -79,10 +79,10 @@ const resolvers = {
     removeMessage: async (parent, { messageId }) => {
       return Message.findOneAndDelete({ _id: messageId });
     },
-    removeComment: async (parent, { messageId, commentId }) => {
+    removeResponse: async (parent, { messageId, responseId }) => {
       return Message.findOneAndUpdate(
         { _id: messageId },
-        { $pull: { comments: { _id: commentId } } },
+        { $pull: { responses: { _id: responseId } } },
         { new: true }
       );
     },

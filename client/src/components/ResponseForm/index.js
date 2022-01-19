@@ -6,6 +6,7 @@ import { ADD_RESPONSE } from '../../utils/mutations';
 
 import Auth from '../../utils/auth';
 
+//This is the responseForm component of the app. This is what will hold the functionality for users to respond to existing messages. Essentially what happens on the "on click" of the promped link in mesaage list.//
 const ResponseForm = ({ messageId }) => {
   const [responseText, setResponseText] = useState('');
   const [characterCount, setCharacterCount] = useState(0);

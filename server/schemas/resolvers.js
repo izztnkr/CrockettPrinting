@@ -15,7 +15,7 @@ const resolvers = {
       return Message.find(params).sort({ createdAt: -1 });
     },
     message: async (parent, { messageId }) => {
-      return Message.findOne({ _id: messageId });
+      return Message.findOne({ id: messageId });
     },
     messages: async (parent, { username }) => {
       return Message.find().sort({ createdAt: -1 });
@@ -25,7 +25,7 @@ const resolvers = {
       return Category.find();
     },
     category: async (parent, { categoryId }) => {
-      return Category.findOne({ _id:categoryId });
+      return Category.findOne({ _id: categoryId });
     },
   },
 
@@ -82,8 +82,8 @@ const resolvers = {
     },
     removeResponse: async (parent, { messageId, responseId }) => {
       return Message.findOneAndUpdate(
-        { _id: messageId },
-        { $pull: { responses: { _id: responseId } } },
+        { id: messageId },
+        { $pull: { responses: { id: responseId } } },
         { new: true }
       );
     },

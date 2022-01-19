@@ -1,14 +1,14 @@
-const { AuthenticationError } = require('apollo-server-express');
-const { User, Message, Category } = require('../models');
-const { signToken } = require('../utils/auth');
+const { AuthenticationError } = require("apollo-server-express");
+const { User, Message, Category } = require("../models");
+const { signToken } = require("../utils/auth");
 
 const resolvers = {
   Query: {
     users: async () => {
-      return User.find().populate('messages');
+      return User.find().populate("messages");
     },
     user: async (parent, { username }) => {
-      return User.findOne({ username }).populate('messages');
+      return User.findOne({ username }).populate("messages");
     },
     userMessages: async (parent, { username }) => {
       const params = username ? { username } : {};
@@ -24,11 +24,9 @@ const resolvers = {
     categories: async () => {
       return Category.find();
     },
-    categories: async(parent, { categoryId }) => {
-      return Category.findOne({ categoryId });
-    }
-    
-  
+    category: async (parent, { categoryId }) => {
+      return Category.findOne({ _id:categoryId });
+    },
   },
 
   Mutation: {
@@ -41,13 +39,13 @@ const resolvers = {
       const user = await User.findOne({ email });
 
       if (!user) {
-        throw new AuthenticationError('No user found with this email address');
+        throw new AuthenticationError("No user found with this email address");
       }
 
       const correctPw = await user.isCorrectPassword(password);
 
       if (!correctPw) {
-        throw new AuthenticationError('Incorrect credentials');
+        throw new AuthenticationError("Incorrect credentials");
       }
 
       const token = signToken(user);
@@ -64,9 +62,12 @@ const resolvers = {
 
       return message;
     },
-    addResponse: async (parent, { messageId, responseText, responseAuthor }) => {
+    addResponse: async (
+      parent,
+      { messageId, responseText, responseAuthor }
+    ) => {
       return Message.findOneAndUpdate(
-        { _id:messageId },
+        { _id: messageId },
         {
           $addToSet: { responses: { responseText, responseAuthor } },
         },

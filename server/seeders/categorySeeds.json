@@ -1,7 +1,7 @@
 [
     {
         "name": "Business Cards",
-        "image": "s3://crockett-printing/professionalservices_businesscards_525x525_1.jpg",
+        "image": "https://crockett-printing.s3.us-east-2.amazonaws.com/professionalservices_businesscards_525x525_1.jpg",
         "options": [
             {
                 "name": "Option 1",
@@ -22,7 +22,7 @@
     },
     {
         "name": "Invitations",
-        "image": "s3://crockett-printing/babyshower_invitations_525x525.jpg",
+        "image": "https://crockett-printing.s3.us-east-2.amazonaws.com/babyshower_invitations_525x525.jpg",
         "options": [
             {
                 "name": "Option 1",
@@ -43,7 +43,7 @@
     },
     {
         "name": "NCR Invoices/Forms",
-        "image": "s3://crockett-printing/NCR_invoices_forms_525x525.jpg",
+        "image": "https://crockett-printing.s3.us-east-2.amazonaws.com/NCR_invoices_forms_525x525.jpg",
         "options": [
             {
                 "name": "Option 1",
@@ -64,7 +64,7 @@
     },
     {
         "name": "Signs/Banners",
-        "image": "s3://crockett-printing/signs_banners_525x525_1.jpg",
+        "image": "https://crockett-printing.s3.us-east-2.amazonaws.com/signs_banners_525x525_1.jpg",
         "options": [
             {
                 "name": "Option 1",
@@ -85,7 +85,7 @@
     },
     {
         "name": "Brochures",
-        "image": "s3://crockett-printing/brochures.jpeg",
+        "image": "https://crockett-printing.s3.us-east-2.amazonaws.com/brochures.jpeg",
         "options": [
             {
                 "name": "Option 1",
@@ -106,7 +106,7 @@
     },
     {
         "name": "Envelopes",
-        "image": "s3://crockett-printing/envelopes_612x612.jpg",
+        "image": "https://crockett-printing.s3.us-east-2.amazonaws.com/envelopes_612x612.jpg",
         "options": [
             {
                 "name": "Option 1",
@@ -127,7 +127,7 @@
     },
     {
         "name": "Decals, Labels",
-        "image": "s3://crockett-printing/labels_612x612.jpg",
+        "image": "https://crockett-printing.s3.us-east-2.amazonaws.com/labels_612x612.jpg",
         "options": [
             {
                 "name": "Option 1",
@@ -148,7 +148,7 @@
     },
     {
         "name": "Nameplates",
-        "image": "s3://crockett-printing/nameplates_612x612.jpg",
+        "image": "https://crockett-printing.s3.us-east-2.amazonaws.com/nameplates_612x612.jpg",
         "options": [
             {
                 "name": "Option 1",
@@ -169,7 +169,7 @@
     },
     {
         "name": "Christian Books and Bibles",
-        "image": "s3://crockett-printing/christian books and bibles-612x612.jpg",
+        "image": "https://crockett-printing.s3.us-east-2.amazonaws.com/christian+books+and+bibles-612x612.jpg",
         "options": [
             {
                 "name": "Option 1",
@@ -190,7 +190,7 @@
     },
     {
         "name": "Sublimated T-Shirts, Mugs, Hats, Plates, Coasters, etc.",
-        "image": "s3://crockett-printing/tshirts_300x200.jpg",
+        "image": "https://crockett-printing.s3.us-east-2.amazonaws.com/tshirts_300x200.jpg",
         "options": [
             {
                 "name": "Option 1",
@@ -211,7 +211,7 @@
     },
     {
         "name": "Vinyl T-Shirts",
-        "image": "s3://crockett-printing/tshirts_300x200.jpg",
+        "image": "https://crockett-printing.s3.us-east-2.amazonaws.com/tshirts_300x200.jpg",
         "options": [
             {
                 "name": "Option 1",
@@ -232,7 +232,7 @@
     },
     {
         "name": "Copies, Faxes, Notary",
-        "image": "s3://crockett-printing/copies_1_525x525.jpg",
+        "image": "https://crockett-printing.s3.us-east-2.amazonaws.com/copies_1_525x525.jpg",
         "options": [
             {
                 "name": "Option 1",
@@ -253,7 +253,7 @@
     },
     {
         "name": "Blueprints, Posters",
-        "image": "s3://crockett-printing/blueprints.1280.jpeg",
+        "image": "https://crockett-printing.s3.us-east-2.amazonaws.com/blueprints.1280.jpeg",
         "options": [
             {
                 "name": "Option 1",
@@ -274,7 +274,7 @@
     },
     {
         "name": "Plaques, Trophies, Awards",
-        "image": "s3://crockett-printing/awards-612x612.jpg",
+        "image": "https://crockett-printing.s3.us-east-2.amazonaws.com/awards-612x612.jpg",
         "options": [
             {
                 "name": "Option 1",
@@ -295,7 +295,7 @@
     },
     {
         "name": "Lamination, and much more!",
-        "image": "s3://crockett-printing/lamination_525x525.jpg",
+        "image": "https://crockett-printing.s3.us-east-2.amazonaws.com/lamination_525x525.jpg",
         "options": [
             {
                 "name": "Option 1",

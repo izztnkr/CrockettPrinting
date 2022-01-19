@@ -2,29 +2,29 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 
-import { ADD_COMMENT } from '../../utils/mutations';
+import { ADD_RESPONSE } from '../../utils/mutations';
 
 import Auth from '../../utils/auth';
 
-const CommentForm = ({ thoughtId }) => {
-  const [commentText, setCommentText] = useState('');
+const ResponseForm = ({ messageId }) => {
+  const [responseText, setResponseText] = useState('');
   const [characterCount, setCharacterCount] = useState(0);
 
-  const [addComment, { error }] = useMutation(ADD_COMMENT);
+  const [addResponse, { error }] = useMutation(ADD_RESPONSE);
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
 
     try {
-      const { data } = await addComment({
+      const { data } = await addResponse({
         variables: {
-          thoughtId,
-          commentText,
-          commentAuthor: Auth.getProfile().data.username,
+          messageId,
+          responseText,
+          responseAuthor: Auth.getProfile().data.username,
         },
       });
 
-      setCommentText('');
+      setResponseText('');
     } catch (err) {
       console.error(err);
     }
@@ -33,24 +33,24 @@ const CommentForm = ({ thoughtId }) => {
   const handleChange = (event) => {
     const { name, value } = event.target;
 
-    if (name === 'commentText' && value.length <= 280) {
-      setCommentText(value);
+    if (name === 'responseText' && value.length <= 1000) {
+      setResponseText(value);
       setCharacterCount(value.length);
     }
   };
 
   return (
     <div>
-      <h4>What are your thoughts on this thought?</h4>
+      <h4>Your message will be sent after clicking 'send'.</h4>
 
       {Auth.loggedIn() ? (
         <>
           <p
             className={`m-0 ${
-              characterCount === 280 || error ? 'text-danger' : ''
+              characterCount === 1000 || error ? 'text-danger' : ''
             }`}
           >
-            Character Count: {characterCount}/280
+            Character Count: {characterCount}/1000
             {error && <span className="ml-2">{error.message}</span>}
           </p>
           <form
@@ -59,9 +59,9 @@ const CommentForm = ({ thoughtId }) => {
           >
             <div className="col-12 col-lg-9">
               <textarea
-                name="commentText"
-                placeholder="Add your comment..."
-                value={commentText}
+                name="replyText"
+                placeholder="Add your response..."
+                value={responseText}
                 className="form-input w-100"
                 style={{ lineHeight: '1.5', resize: 'vertical' }}
                 onChange={handleChange}
@@ -70,14 +70,14 @@ const CommentForm = ({ thoughtId }) => {
 
             <div className="col-12 col-lg-3">
               <button className="btn btn-primary btn-block py-3" type="submit">
-                Add Comment
+                Send
               </button>
             </div>
           </form>
         </>
       ) : (
         <p>
-          You need to be logged in to share your thoughts. Please{' '}
+          You need to be logged in to send your messages. Please login{' '}
           <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
         </p>
       )}
@@ -85,4 +85,4 @@ const CommentForm = ({ thoughtId }) => {
   );
 };
 
-export default CommentForm;
+export default ResponseForm;

@@ -1,4 +1,4 @@
-const { gql } = require('apollo-server-express');
+const { gql } = require("apollo-server-express");
 
 const typeDefs = gql`
   type User {
@@ -6,21 +6,21 @@ const typeDefs = gql`
     username: String
     email: String
     password: String
-    thoughts: [Thought]!
+    messages: [Message]!
   }
 
-  type Thought {
+  type Message {
     _id: ID
-    thoughtText: String
-    thoughtAuthor: String
+    messageText: String
+    messageAuthor: String
     createdAt: String
-    comments: [Comment]!
+    responses: [Response]!
   }
 
-  type Comment {
+  type Response {
     _id: ID
-    commentText: String
-    commentAuthor: String
+    responseText: String
+    responseAuthor: String
     createdAt: String
   }
 
@@ -32,21 +32,38 @@ const typeDefs = gql`
   type Query {
     users: [User]
     user(username: String!): User
-    thoughts(username: String): [Thought]
-    thought(thoughtId: ID!): Thought
+    messages: [Message]
+    userMessages(username: String): [Message]
+    message(messageId: ID!): Message
+    categories: [Category]
+    category(categoryId: ID!): Category
   }
 
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
-    addThought(thoughtText: String!, thoughtAuthor: String!): Thought
-    addComment(
-      thoughtId: ID!
-      commentText: String!
-      commentAuthor: String!
-    ): Thought
-    removeThought(thoughtId: ID!): Thought
-    removeComment(thoughtId: ID!, commentId: ID!): Thought
+    addMessage(messageText: String!, messageAuthor: String!): Message
+    addResponse(
+      messageId: ID!
+      responseText: String!
+      responseAuthor: String!
+    ): Message
+    removeMessage(messageId: ID!): Message
+    removeResponse(messageId: ID!, commentId: ID!): Message
+  },
+
+  type Category {
+    _id: ID!
+    name: String!
+    image: String!
+    options: [Options]! 
+  },
+
+  type Options {
+    _id: ID
+    name: String!
+    size: String!
+    price: String!
   }
 `;
 

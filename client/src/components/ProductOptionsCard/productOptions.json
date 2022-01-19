@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "SpongeBob",
+    "image": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
+    "cost": "$30",
+    "unit": "(1) Pineapple Under the Sea",
+    "description": "A Pineapple Under the Sea from the acclaimed and hit show 'SpongeBob SquarePants!"
+  },
+  {
+    "id": 2,
+    "name": "Mr. Krabs",
+    "image": "https://vignette3.wikia.nocookie.net/vsbattles/images/8/80/Mr._Krabs.png/revision/latest?cb=20150919162131",
+    "cost": "$7",
+    "unit": "(1) Restaurant Owner",
+    "description": "What you see in the pic is what you get."
+  },
+  {
+    "id": 3,
+    "name": "Squidward",
+    "image": "https://vignette2.wikia.nocookie.net/fictionalcharacters/images/a/ac/Squidward.png/revision/latest?cb=20131121012626",
+    "cost": "$15",
+    "unit": "(1) Cashier",
+    "description": "An Easter Island Head who now works as a cashier"
+  },
+  {
+    "id": 4,
+    "name": "Dexter",
+    "image": "https://s-media-cache-ak0.pinimg.com/originals/fe/32/49/fe32495d45283cd6860ae122f0aeaad9.png",
+    "cost": "$60,000",
+    "unit": "(1) Boy Genius",
+    "description": "1 boy, probably a genius not a killer."
+  }
+]

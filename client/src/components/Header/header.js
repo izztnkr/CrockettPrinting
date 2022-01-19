@@ -13,9 +13,24 @@ const Header = () => {
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <div>
           <Link className="text-light" to="/">
-            <h1 className="m-0">Tech Thoughts</h1>
+            <h1 className="m-0">Crockett Printing</h1>
           </Link>
-          <p className="m-0">Get into the mind of a programmer.</p>
+          <p className="m-0">Printing and Design solutions for all of your needs.</p>
+        </div>
+        <div>
+          <Link className="text-light" to="/">
+          <h2 className="m-0">Home</h2>
+            </Link>
+        </div>
+        <div>
+          <Link className="text-light" to="/products">
+          <h2 className="m-0">Products</h2>
+            </Link>
+        </div>
+        <div>
+          <Link className="text-light" to="/messages">
+          <h2 className="m-0">Messages</h2>
+            </Link>
         </div>
         <div>
           {Auth.loggedIn() ? (

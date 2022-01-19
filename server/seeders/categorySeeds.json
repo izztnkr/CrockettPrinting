@@ -1,0 +1,317 @@
+[
+    {
+        "name": "Business Cards",
+        "image": "https://crockett-printing.s3.us-east-2.amazonaws.com/professionalservices_businesscards_525x525_1.jpg",
+        "options": [
+            {
+                "name": "Option 1",
+                "size": "5x7",
+                "price": "$5.70"
+            },
+            {
+                "name": "Option 2",
+                "size": "6x9",
+                "price": "$6.70"
+            },
+            {
+                "name": "Option 3",
+                "size": "3x4",
+                "price": "$3.70"
+            }
+        ]
+    },
+    {
+        "name": "Invitations",
+        "image": "https://crockett-printing.s3.us-east-2.amazonaws.com/babyshower_invitations_525x525.jpg",
+        "options": [
+            {
+                "name": "Option 1",
+                "size": "5x7",
+                "price": "$5.70"
+            },
+            {
+                "name": "Option 2",
+                "size": "6x9",
+                "price": "$6.70"
+            },
+            {
+                "name": "Option 3",
+                "size": "3x4",
+                "price": "$3.70"
+            }
+        ]
+    },
+    {
+        "name": "NCR Invoices/Forms",
+        "image": "https://crockett-printing.s3.us-east-2.amazonaws.com/NCR_invoices_forms_525x525.jpg",
+        "options": [
+            {
+                "name": "Option 1",
+                "size": "5x7",
+                "price": "$5.70"
+            },
+            {
+                "name": "Option 2",
+                "size": "6x9",
+                "price": "$6.70"
+            },
+            {
+                "name": "Option 3",
+                "size": "3x4",
+                "price": "$3.70"
+            }
+        ]
+    },
+    {
+        "name": "Signs/Banners",
+        "image": "https://crockett-printing.s3.us-east-2.amazonaws.com/signs_banners_525x525_1.jpg",
+        "options": [
+            {
+                "name": "Option 1",
+                "size": "5x7",
+                "price": "$5.70"
+            },
+            {
+                "name": "Option 2",
+                "size": "6x9",
+                "price": "$6.70"
+            },
+            {
+                "name": "Option 3",
+                "size": "3x4",
+                "price": "$3.70"
+            }
+        ]
+    },
+    {
+        "name": "Brochures",
+        "image": "https://crockett-printing.s3.us-east-2.amazonaws.com/brochures.jpeg",
+        "options": [
+            {
+                "name": "Option 1",
+                "size": "5x7",
+                "price": "$5.70"
+            },
+            {
+                "name": "Option 2",
+                "size": "6x9",
+                "price": "$6.70"
+            },
+            {
+                "name": "Option 3",
+                "size": "3x4",
+                "price": "$3.70"
+            }
+        ]
+    },
+    {
+        "name": "Envelopes",
+        "image": "https://crockett-printing.s3.us-east-2.amazonaws.com/envelopes_612x612.jpg",
+        "options": [
+            {
+                "name": "Option 1",
+                "size": "5x7",
+                "price": "$5.70"
+            },
+            {
+                "name": "Option 2",
+                "size": "6x9",
+                "price": "$6.70"
+            },
+            {
+                "name": "Option 3",
+                "size": "3x4",
+                "price": "$3.70"
+            }
+        ]
+    },
+    {
+        "name": "Decals, Labels",
+        "image": "https://crockett-printing.s3.us-east-2.amazonaws.com/labels_612x612.jpg",
+        "options": [
+            {
+                "name": "Option 1",
+                "size": "5x7",
+                "price": "$5.70"
+            },
+            {
+                "name": "Option 2",
+                "size": "6x9",
+                "price": "$6.70"
+            },
+            {
+                "name": "Option 3",
+                "size": "3x4",
+                "price": "$3.70"
+            }
+        ]
+    },
+    {
+        "name": "Nameplates",
+        "image": "https://crockett-printing.s3.us-east-2.amazonaws.com/nameplates_612x612.jpg",
+        "options": [
+            {
+                "name": "Option 1",
+                "size": "5x7",
+                "price": "$5.70"
+            },
+            {
+                "name": "Option 2",
+                "size": "6x9",
+                "price": "$6.70"
+            },
+            {
+                "name": "Option 3",
+                "size": "3x4",
+                "price": "$3.70"
+            }
+        ]
+    },
+    {
+        "name": "Christian Books and Bibles",
+        "image": "https://crockett-printing.s3.us-east-2.amazonaws.com/christian+books+and+bibles-612x612.jpg",
+        "options": [
+            {
+                "name": "Option 1",
+                "size": "5x7",
+                "price": "$5.70"
+            },
+            {
+                "name": "Option 2",
+                "size": "6x9",
+                "price": "$6.70"
+            },
+            {
+                "name": "Option 3",
+                "size": "3x4",
+                "price": "$3.70"
+            }
+        ]
+    },
+    {
+        "name": "Sublimated T-Shirts, Mugs, Hats, Plates, Coasters, etc.",
+        "image": "https://crockett-printing.s3.us-east-2.amazonaws.com/tshirts_300x200.jpg",
+        "options": [
+            {
+                "name": "Option 1",
+                "size": "5x7",
+                "price": "$5.70"
+            },
+            {
+                "name": "Option 2",
+                "size": "6x9",
+                "price": "$6.70"
+            },
+            {
+                "name": "Option 3",
+                "size": "3x4",
+                "price": "$3.70"
+            }
+        ]
+    },
+    {
+        "name": "Vinyl T-Shirts",
+        "image": "https://crockett-printing.s3.us-east-2.amazonaws.com/tshirts_300x200.jpg",
+        "options": [
+            {
+                "name": "Option 1",
+                "size": "5x7",
+                "price": "$5.70"
+            },
+            {
+                "name": "Option 2",
+                "size": "6x9",
+                "price": "$6.70"
+            },
+            {
+                "name": "Option 3",
+                "size": "3x4",
+                "price": "$3.70"
+            }
+        ]
+    },
+    {
+        "name": "Copies, Faxes, Notary",
+        "image": "https://crockett-printing.s3.us-east-2.amazonaws.com/copies_1_525x525.jpg",
+        "options": [
+            {
+                "name": "Option 1",
+                "size": "5x7",
+                "price": "$5.70"
+            },
+            {
+                "name": "Option 2",
+                "size": "6x9",
+                "price": "$6.70"
+            },
+            {
+                "name": "Option 3",
+                "size": "3x4",
+                "price": "$3.70"
+            }
+        ]
+    },
+    {
+        "name": "Blueprints, Posters",
+        "image": "https://crockett-printing.s3.us-east-2.amazonaws.com/blueprints.1280.jpeg",
+        "options": [
+            {
+                "name": "Option 1",
+                "size": "5x7",
+                "price": "$5.70"
+            },
+            {
+                "name": "Option 2",
+                "size": "6x9",
+                "price": "$6.70"
+            },
+            {
+                "name": "Option 3",
+                "size": "3x4",
+                "price": "$3.70"
+            }
+        ]
+    },
+    {
+        "name": "Plaques, Trophies, Awards",
+        "image": "https://crockett-printing.s3.us-east-2.amazonaws.com/awards-612x612.jpg",
+        "options": [
+            {
+                "name": "Option 1",
+                "size": "5x7",
+                "price": "$5.70"
+            },
+            {
+                "name": "Option 2",
+                "size": "6x9",
+                "price": "$6.70"
+            },
+            {
+                "name": "Option 3",
+                "size": "3x4",
+                "price": "$3.70"
+            }
+        ]
+    },
+    {
+        "name": "Lamination, and much more!",
+        "image": "https://crockett-printing.s3.us-east-2.amazonaws.com/lamination_525x525.jpg",
+        "options": [
+            {
+                "name": "Option 1",
+                "size": "5x7",
+                "price": "$5.70"
+            },
+            {
+                "name": "Option 2",
+                "size": "6x9",
+                "price": "$6.70"
+            },
+            {
+                "name": "Option 3",
+                "size": "3x4",
+                "price": "$3.70"
+            }
+        ]
+    }
+]

@@ -65,31 +65,32 @@ export const QUERY_RESPONSE = gql`
 
 export const QUERY_CATEGORIES = gql`
   query getCategories {
-    category {
-      _id
+    categories {
+      id
       image
       name
       options {
-        _id
+        id
         name
         size
         price
       }
     }
-  }`
+  }
+`;
 
 export const QUERY_SINGLE_CATEGORY = gql`
-query getCategories($categoryId: ID!) {
-  category(category: $category) {
-    _id
-    image
-    name
-    options {
-      _id
+  query getCategories($categoryId: ID!) {
+    category(categoryId: $categoryId) {
+      id
+      image
       name
-      size
-      price
+      options {
+        id
+        name
+        size
+        price
+      }
     }
   }
-}`
-
+`;

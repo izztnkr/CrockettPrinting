@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "./style.css";
 
 function ProductCard(props) {
+  console.log(props);
   return (
     <div className="card">
       <div className="img-container">
@@ -15,7 +16,7 @@ function ProductCard(props) {
             <strong> {props.name}</strong>
           </li>
           <li className="link">
-            <Link to={`/products/${props.name}`}>
+            <Link to={`/products/${props.id}`}>
               Explore all {props.name} products
             </Link>
           </li>

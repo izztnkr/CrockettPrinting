@@ -50,17 +50,17 @@ const typeDefs = gql`
     ): Message
     removeMessage(messageId: ID!): Message
     removeResponse(messageId: ID!, commentId: ID!): Message
-  },
+  }
 
   type Category {
-    _id: ID!
+    id: ID!
     name: String!
     image: String!
-    options: [Option]! 
-  },
+    options: [Option]!
+  }
 
   type Option {
-    _id: ID!
+    id: ID!
     name: String!
     size: String!
     price: String!

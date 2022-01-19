@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../MessageList/style.css";
 
+//messageList component for app. This will show a list of all the messages which exist and will also prompt users to respond if necessary
 const MessageList = ({ messages, title }) => {
   if (!messages.length) {
     return <h3>No Messages Yet</h3>;

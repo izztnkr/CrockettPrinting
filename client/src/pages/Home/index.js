@@ -1,8 +1,8 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
 
-import MessageList from "../../components/MessageList/MessageList";
-import MessageForm from "../../components/MessageForm/messageForm";
+import MessageList from "../../components/MessageList";
+import MessageForm from "../../components/MessageForm";
 
 import { QUERY_MESSAGES } from "../../utils/queries";
 

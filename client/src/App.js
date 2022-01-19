@@ -8,14 +8,14 @@ import {
 import { setContext } from "@apollo/client/link/context";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import Home from "./pages/Home/Home";
-import Signup from "./pages/SignUp/Signup";
-import Login from "./pages/LogIn/Login";
-import SingleMessage from "./pages/SingleMessage/SingleMessage";
-import Header from "./components/Header/header";
-import Footer from "./components/Footer/footer";
+import Home from "./pages/Home";
+import Signup from "./pages/SignUp";
+import Login from "./pages/LogIn";
+import SingleMessage from "./pages/SingleMessage";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Products from "./pages/Products";
-import ProductOptions from "./components/ProductListCard"
+import ProductOptions from "./components/SingleCategory"
 import About from "./pages/About/index.js"
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({

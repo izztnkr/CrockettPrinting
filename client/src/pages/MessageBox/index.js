@@ -5,8 +5,8 @@ import MessageList from "../../components/MessageList";
 import MessageForm from "../../components/MessageForm";
 
 import { QUERY_MESSAGES } from "../../utils/queries";
-
-const Home = () => {
+//this is the MessageBox page of the app. Essentially the user's inbox for messages sent to them 
+const MessageBox = () => {
   const { loading, data } = useQuery(QUERY_MESSAGES);
   const messages = data?.messages || [];
 
@@ -34,4 +34,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default MessageBox;

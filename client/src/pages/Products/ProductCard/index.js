@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 // import { useQuery } from '@apollo/client';
 import "./style.css";
-
+//this is the ProductCard used to render the different print Categories offered by the business
 function ProductCard(props) {
   console.log(props);
   return (

@@ -56,11 +56,11 @@ const typeDefs = gql`
     _id: ID!
     name: String!
     image: String!
-    options: [Options]! 
+    options: [Option]! 
   },
 
-  type Options {
-    _id: ID
+  type Option {
+    _id: ID!
     name: String!
     size: String!
     price: String!

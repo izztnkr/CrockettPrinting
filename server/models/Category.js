@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
-const optionSchema = require('./Options');
+// const optionSchema = require('./Options');
 
 const categorySchema = new Schema({
     name: {
@@ -17,22 +17,19 @@ const categorySchema = new Schema({
     options: [ 
         {
             name: {
-                type: String,
-                trim: true
-            },
-
+            type: String,
+            trim: true
+        },
             size: {
-              type: String,
-              trim: true
-            },
-
+            type: String,
+            trim: true
+        },
             price: {
-              type: String,
-              required: true,
-              trim: true
-            },
-        }
-    ]
+            type: String,
+            required: true,
+            trim: true
+        },
+        },]
 });
 
 const Category = model("Category", categorySchema);

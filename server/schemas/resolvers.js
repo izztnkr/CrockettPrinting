@@ -22,10 +22,10 @@ const resolvers = {
     },
     // messing around with these bottom two, dont think parent is necessary but if something broke, double check
     categories: async () => {
-      return Category.find().populate("options");
+      return Category.find();
     },
     categories: async(parent, { categoryId }) => {
-      return Category.findOne({ categoryId }).populate("options");
+      return Category.findOne({ categoryId });
     }
     
   

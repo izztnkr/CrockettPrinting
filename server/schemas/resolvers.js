@@ -77,9 +77,11 @@ const resolvers = {
         }
       );
     },
-    removeMessage: async (parent, { messageId }) => {
-      return Message.findOneAndDelete({ _id: messageId });
+    removeMessage: async (parent, { messageId }, context) => {
+      const message = await Message.findOneAndDelete({ _id: messageId });
+      return message;
     },
+
     removeResponse: async (parent, { messageId, responseId }) => {
       return Message.findOneAndUpdate(
         { id: messageId },

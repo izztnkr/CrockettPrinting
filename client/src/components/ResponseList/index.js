@@ -1,5 +1,6 @@
 import React from 'react';
 
+// this is the response List component of the app. This will help us render all responses currently in existence"
 const ResponseList = ({ responses = [] }) => {
   if (!responses.length) {
     return <h3>No Replies Yet</h3>;

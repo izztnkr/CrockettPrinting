@@ -1,5 +1,5 @@
 import { gql } from "@apollo/client";
-
+//all of the queries used in the app, stored here 
 export const QUERY_USER = gql`
   query user($username: String!) {
     user(username: $username) {

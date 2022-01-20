@@ -20,17 +20,20 @@ function Products() {
 
   return (
     <Wrapper>
-      <h1 className="title">Explore All Print Products</h1>
+      <h1 className="title ">Explore All Print Products</h1>
       {/* Map through 'Categories' and render a 'OptionsCard' for each category */}
       {/* Pass in the 'removeProduct()' method and each property of a product (ICEBOX ITEM) */}
       {categories.map(category => (
+
         <ProductCard
           // removeProduct={removeProduct} (ICEBOX ITEM)
           id={category.id}
           name={category.name}
-          image={category.image}          
+          image={category.image}
         />
-      ))}
+       
+     ))}
+        
     </Wrapper>
   );
 }

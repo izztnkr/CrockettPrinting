@@ -11,12 +11,11 @@ const Header = () => {
   };
   return (
     <header className="bg-primary text-light mb-4 py-3 flex-row align-center">
-      <div className="container flex-row justify-space-between-lg justify-center align-center">
+      <div className="d-flex container flex-row justify-space-between-lg justify-center align-center">
         <div>
           <Link className="text-light" to="/">
-            <h1 className="m-0">Crockett Printing</h1>
-          </Link>
-          <p className="m-0">Your One Stop Print Shop</p>
+            <img className='logo' src='https://media.discordapp.net/attachments/910746818793599028/931348457858433034/CP_new_logo_png.png?width=1440&height=528'></img>
+          </Link> 
         </div>
         <div>
           <Link className="text-light" to="/">

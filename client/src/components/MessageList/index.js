@@ -21,8 +21,8 @@ const MessageList = ({ messages, title }) => {
       <h3>{title}</h3>
       {messages &&
         messages.map((message) => (
-          <div key={message._id} className="card mb-3">
-            <h4 className="card-header bg-primary text-light p-2 m-0">
+          <div key={message._id} className="card mb-3" id="singleMessageBox">
+            <h4 className="card-header bg-primary p-2 m-0" id="messageAuthor">
               {message.messageAuthor} <br />
               <span style={{ fontSize: "1rem" }}>
                 message submitted on {message.createdAt}
@@ -40,6 +40,7 @@ const MessageList = ({ messages, title }) => {
             </div>
             <Link
               className="btn btn-primary btn-block btn-squared"
+              id="replyBox"
               to={`/messages/${message._id}`}
             >
               Click here to reply.

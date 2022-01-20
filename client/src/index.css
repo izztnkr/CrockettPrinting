@@ -12,6 +12,23 @@ html {
   /* 2 */
 }
 
+/* Color Scheme */
+:root {
+  --purple: #613394;
+  --ebony: #281c2d;
+  --dustypurple: #695e93;
+  --purplehaze: #beafc2; 
+}
+
+/* Header */
+header h2 {
+  color: #2b2b23;
+}
+
+.logo {
+  width: 20%;
+}
+
 /* Sections
    ========================================================================== */
 /**
@@ -920,7 +937,7 @@ a:hover {
 
 /* BACKGROUND UTILS */
 .bg-primary {
-  background-color: #613659 !important;
+  background-color: var(--purplehaze) !important;
 }
 
 .bg-info {
@@ -1032,7 +1049,7 @@ a:hover {
 }
 
 .btn.btn-info {
-  background-color: #1bbc9b;
+  background-color: #695e93;
   color: #ffffff;
 }
 

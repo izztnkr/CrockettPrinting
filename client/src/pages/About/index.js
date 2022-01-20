@@ -6,6 +6,7 @@ const About = () => (
       <div>
         {/* IceBox feature */}
         {/* <img src = "" alt="">PICTURE OF ME</img> */}
+        Welcome to Crockett Printing, Your One Stop Print Shop! We are a small local business located in Crockett, TX, with all your printing and design needs. Please contact us below or meet us in person. 
       </div>
       <div className="intro">
         

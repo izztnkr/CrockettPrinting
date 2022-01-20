@@ -39,7 +39,7 @@ SO THAT I can develop a web presence to draw in more consumers.
 
   ## Preview
   
-![image](https://media0.giphy.com/media/lNY0a9aJgFcCaDn1nw/giphy.gif?cid=ecf05e47psgv7yleo14azmxgq6al2ofi7e84ze6604v6z3qo&rid=giphy.gif&ct=g)
+![Crockett Printing](https://user-images.githubusercontent.com/86173119/150372753-f97f22f0-5017-4c45-b80d-746608191d4f.gif)
 
 
 ## Technical_Criteria 
@@ -62,12 +62,12 @@ SO THAT I can develop a web presence to draw in more consumers.
 
   Built for Crockett Printing with love and care by
 
-  :octocat: [Angela Loftus](https://www.github.com/AngelaLoftus)
+  :octocat: [Angela Loftus](https://www.github.com/AngelaLoftus), Styling, React front-end, database structure 
  
-  :octocat: [Dakota Donaldson](https://github.com/Dakota3214) 
+  :octocat: [Dakota Donaldson](https://github.com/Dakota3214), React front-end, Heroku deployment
 
-  :octocat: [Izzy Ramirez](https://github.com/izztnkr) 
+  :octocat: [Izzy Ramirez](https://github.com/izztnkr), Client contact, database and seeds
   
   
  ## Links
-  [Link to deployed application](https://github.com/izztnkr/CrockettPrinting)
+  [Link to deployed application](https://crockett-printing.herokuapp.com/)

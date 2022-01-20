@@ -13,12 +13,12 @@ db.once('open', async () => {
     await Category.create(categorySeeds);
 
     for (let i = 0; i < messageSeeds.length; i++) {
-      const { id, messageAuthor } = await Message.create(messageSeeds[i]);
+      const { _id, messageAuthor } = await Message.create(messageSeeds[i]);
       const user = await User.findOneAndUpdate(
         { username: messageAuthor },
         {
           $addToSet: {
-            messages: id,
+            messages: _id,
           },
         }
       );

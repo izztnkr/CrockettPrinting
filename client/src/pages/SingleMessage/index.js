@@ -18,7 +18,7 @@ const SingleMessage = () => {
     variables: { messageId: messageId },
   });
 
-  const message = data?.message || {};
+  const message = data?.message || {}; // Square or squirly
 
   if (loading) {
     return <div>Loading...</div>;

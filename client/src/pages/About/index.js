@@ -1,5 +1,5 @@
 import React from "react";
-
+//this is the About Page which will render on click of both the company name and the "home" item in the nav bar"
 const About = () => (
   <div>
     <h1>About Page</h1>

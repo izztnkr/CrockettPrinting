@@ -10,7 +10,7 @@ import ResponseForm from "../../components/ResponseForm";
 import { QUERY_SINGLE_MESSAGE } from "../../utils/queries";
 
 const SingleMessage = () => {
-  // Use `useParams()` to retrieve value of the route parameter `:profileId`
+  // Use `useParams()` to retrieve value of the route parameter `:messageId`
   const { messageId } = useParams();
 
   const { loading, data } = useQuery(QUERY_SINGLE_MESSAGE, {

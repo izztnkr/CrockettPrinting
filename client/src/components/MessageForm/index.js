@@ -8,6 +8,8 @@ import { QUERY_MESSAGES } from '../../utils/queries';
 import Auth from '../../utils/auth';
 import "./style.css";
 
+//message form component for app. This is where users can type a message and submit//
+
 const MessageForm = () => {
   const [messageText, setMessageText] = useState('');
 

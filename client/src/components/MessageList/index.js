@@ -1,8 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../MessageList/style.css";
+import { useMutation } from "@apollo/client";
+import { REMOVE_MESSAGE } from "../../utils/mutations";
+import { QUERY_MESSAGES } from "../../utils/queries";
+// import { useParams } from "react-router-dom";
 
+//messageList component for app. This will show a list of all the messages which exist and will also prompt users to respond if necessary
 const MessageList = ({ messages, title }) => {
+  const [removeMessage] = useMutation(REMOVE_MESSAGE, {
+    refetchQueries: [{ query: QUERY_MESSAGES }],
+  });
+
   if (!messages.length) {
     return <h3>No Messages Yet</h3>;
   }
@@ -21,6 +30,13 @@ const MessageList = ({ messages, title }) => {
             </h4>
             <div className="card-body bg-light p-2">
               <p>{message.messageText}</p>
+              <button
+                onClick={() =>
+                  removeMessage({ variables: { messageId: message._id } })
+                }
+              >
+                Delete Message
+              </button>
             </div>
             <Link
               className="btn btn-primary btn-block btn-squared"

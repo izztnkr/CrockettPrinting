@@ -5,7 +5,7 @@ import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../../utils/mutations';
 
 import Auth from '../../utils/auth';
-
+//This is the Signup page where users can create a new login/account to be able to message the business with their order
 const Signup = () => {
   const [formState, setFormState] = useState({
     username: '',

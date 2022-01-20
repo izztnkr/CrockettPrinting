@@ -16,7 +16,7 @@ const Header = () => {
           <Link className="text-light" to="/">
             <h1 className="m-0">Crockett Printing</h1>
           </Link>
-          <p className="m-0">Printing and Design solutions for all of your needs.</p>
+          <p className="m-0">Your One Stop Print Shop</p>
         </div>
         <div>
           <Link className="text-light" to="/">

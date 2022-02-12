@@ -63,10 +63,10 @@ SO THAT I can develop a web presence to draw in more consumers.
   Built for Crockett Printing with love and care by
 
   :octocat: [Angela Loftus](https://www.github.com/AngelaLoftus), Styling, React front-end, database structure 
+  
+  :octocat: [Izzy Ramirez](https://github.com/izztnkr), React front-end, Heroku deployment, messaging functionality
  
-  :octocat: [Dakota Donaldson](https://github.com/Dakota3214), React front-end, Heroku deployment, messaging functionality
-
-  :octocat: [Izzy Ramirez](https://github.com/izztnkr), Client contact, database and seeds
+  :octocat: [Dakota Donaldson](https://github.com/Dakota3214), Client contact, database and seeds
   
   
  ## Links
